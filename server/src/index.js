@@ -27,3 +27,8 @@ const PORT = process.env.PORT || 8080;
 connectDB(process.env.MONGODB_URI)
   .then(() => app.listen(PORT, () => console.log(`Server on :${PORT}`)))
   .catch((e) => { console.error(e); process.exit(1); });
+
+
+app.get('/', (req, res) => {
+    res.send('Backend is running');
+});
