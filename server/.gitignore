@@ -1,0 +1,49 @@
+# Backend .gitignore
+
+# Dependencies
+# Ignore the folder where all the project dependencies are installed.
+/node_modules
+
+# Build artifacts
+# In case you use TypeScript or a bundler for your backend.
+/dist
+/build
+
+# Log files
+# Ignore any application or dependency log files.
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+# Critical for the backend to protect database credentials, API keys, etc.
+# A .env.example file can be committed to show what variables are needed.
+.env
+.env.local
+
+# IDE and editor directories
+# Ignore settings files from popular code editors.
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Caches
+# Ignore cache directories from package managers.
+.npm/
+.yarn/cache
+
+# Test reports
+# Ignore reports generated from running tests.
+/coverage
+
+# System files
+# Ignore metadata files created by the operating system.
+.DS_Store
+Thumbs.db
+
+# Optional: User-uploaded files
+# If your application allows users to upload files that are stored on the server,
+# you should ignore that directory.
+# /uploads/
